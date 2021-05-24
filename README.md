@@ -86,7 +86,7 @@ Você implementará várias funções para atender aos requisitos propostos e/ou
 
   - Será um dia de projeto;
 
-  - Data de entrega para avaliação final do projeto: `31/05/2021 - 14:00h
+  - Data de entrega para avaliação final do projeto: `31/05/2021 - 14:00h`
 
 ---
 
@@ -212,7 +212,7 @@ A função average recebe um array (tamanho variável) e retorna a média dos va
 
   **O que será avaliado**
 
-  * Será validado se o comportamento da função "average" está correto'.
+  * Será validado se o comportamento da função "average" está correto.
 
 ### 2 - Implemente os casos de teste para a função `numbers`
 
