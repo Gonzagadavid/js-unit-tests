@@ -11,9 +11,36 @@
     - average([1, 1]) // Retorno: 1;
     - average([1, '2']) // Retorno: undefined;
 */
+const checkTypeNumber = (array) => {
+  let noType = false;
 
-const average = () => {
-  // add your implementation here
+  for (let index = 0; index < array.length; index += 1) {
+    if (typeof array[index] !== 'number') {
+      noType = true;
+    }
+  }
+
+  return noType;
 };
+
+const average = (arrayNumbes) => {
+  const qty = arrayNumbes.length;
+  let total = 0;
+  console.log(qty);
+
+  if (checkTypeNumber(arrayNumbes) || qty === 0) {
+    return undefined;
+  }
+
+  for (let index = 0; index < qty; index += 1) {
+    total += arrayNumbes[index];
+  }
+
+  const averageNumbers = Math.round(total / qty);
+
+  return averageNumbers;
+};
+
+console.log(average([]));
 
 module.exports = average;
