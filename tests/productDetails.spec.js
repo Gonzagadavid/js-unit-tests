@@ -43,7 +43,7 @@ describe('6 - Implemente os casos de teste para a função `productDetails`', ()
 
     for (let index = 0; index < arrayTeste.length; index += 1) {
       assert.strictEqual(typeof arrayTeste[index], 'object');
-      assert.notStrictEqual(typeof arrayTeste[index], null);
+      assert.notStrictEqual(arrayTeste[index], null);
       assert.strictEqual(Array.isArray(arrayTeste[index]), false);
     }
 
