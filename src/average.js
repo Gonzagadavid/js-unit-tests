@@ -12,15 +12,13 @@
     - average([1, '2']) // Retorno: undefined;
 */
 const checkTypeNumber = (array) => {
-  let noType = false;
-
   for (let index = 0; index < array.length; index += 1) {
     if (typeof array[index] !== 'number') {
-      noType = true;
+      return true;
     }
   }
 
-  return noType;
+  return false;
 };
 
 const average = (arrayNumbes) => {
