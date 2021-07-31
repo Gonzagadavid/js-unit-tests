@@ -54,7 +54,7 @@ describe('9 - Implemente os casos de teste e a função `createMenu`', () => {
   it('Verifica se a função `createMenu` tem o comportamento esperado', () => {
     // TESTE 1: Verifique se o retorno da função createMenu() é um objeto que possui,
     // mas não é necessariamente é limitado à chave `fetchMenu`, a qual tem como valor uma função.
-    // onst objetoRetornado = createMenu(); // Retorno: { fetchMenu: () => {}, ... }
+    // const objetoRetornado = createMenu(); // Retorno: { fetchMenu: () => {}, ... }
     assert.strictEqual(typeof createMenu(), 'object');
     assert.notStrictEqual(createMenu(), null);
     assert.strictEqual(Array.isArray(createMenu()), false);

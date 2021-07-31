@@ -24,7 +24,6 @@ const checkTypeNumber = (array) => {
 const average = (arrayNumbes) => {
   const qty = arrayNumbes.length;
   let total = 0;
-  console.log(qty);
 
   if (checkTypeNumber(arrayNumbes) || qty === 0) {
     return undefined;
